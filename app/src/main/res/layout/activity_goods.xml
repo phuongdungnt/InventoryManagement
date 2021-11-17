@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Goods.GoodsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ic_back"
+        android:layout_height="50dp"
+        android:background="@color/darkpurple"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="Sản phẩm"
+            android:textColor="@color/black"
+            android:layout_marginTop="7dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_weight="7"/>
+
+
+        <TextView
+            android:id="@+id/cre_good"
+            android:layout_width="0dp"
+            android:layout_margin="7dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_add"
+            android:layout_weight="1.5"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shapesearch"
+            android:drawableEnd="@drawable/ic_searching"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="Search"
+            android:paddingLeft="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/tb"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:ems="10"
+            android:text="Hiện chưa có sản phẩm, hãy thêm sản phẩm!" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        tools:layout_editor_absoluteX = "1dp"
+        tools:layout_editor_absoluteY =" 1dp"
+        />
+</LinearLayout>

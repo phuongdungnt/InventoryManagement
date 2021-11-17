@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightpurple"
+    tools:context=".Start.StartActivity"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/icLogo"
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="10dp"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <TextView
+        android:id="@+id/txtNameApp"
+        android:layout_width="199dp"
+        android:layout_height="198dp"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/luckiestguy_regular"
+        android:text="INVENTORY MANAGEMENT"
+        android:textColor="@color/black"
+        android:paddingRight="10dp"
+        android:textSize="29dp" />
+</RelativeLayout>
